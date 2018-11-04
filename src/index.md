@@ -37,15 +37,15 @@ DORA 公司 （DevOps Research and Assessment，DevOps 研究与评估机构）�
 
 ## 动手实验列表
 
-准备：Azure DevOps实验环境激活
+**准备：Azure DevOps实验环境激活**
 
 * 使用 devcloudX.com 激活 Azure DevOps 实验环境
 
-第一天：使用Azure DevOps支持敏捷开发实践
+**第一天：使用Azure DevOps支持敏捷开发实践**
 
-* 实验 1: 了解敏捷开发基本概念
-  * 练习 1: 关于用户故事
-  * 练习 2: 关于敏捷开发
+* [实验 1: 了解敏捷开发基本概念](labs/labs01-agile-overview/index.md)
+  * [练习 1: 关于用户故事](labs/labs01-agile-overview/01-user-story/index.md)
+  * [练习 2: 关于敏捷开发](labs/labs01-agile-overview/02-agile-software-development/index.md)
   * 练习 3: 影响地图概述
   * 练习 4: 用户故事地图概述
 * 实验 2: 销售额翻倍挑战
@@ -57,7 +57,7 @@ DORA 公司 （DevOps Research and Assessment，DevOps 研究与评估机构）�
   * 练习 3: 电子看板定制化配置
   * 练习 4: 使用电子看板运作一个迭代
 
-第二天：使用Azure DevOps搭建基于Docker的持续交付流水线
+**第二天：使用Azure DevOps搭建基于Docker的持续交付流水线**
 
 * 实验 1: 基于Docker的持续交付流水线搭建
   * 练习 1: 从Github导入源代码到Azure DevOps Repo代码托管

@@ -21,7 +21,7 @@ DORA 公司 （DevOps Research and Assessment，DevOps 研究与评估机构）�
 在2018年的《全球DevOps现状调查报告》中我们看到精英效能组织能够以高于低效组织46倍的速度发布软件，同时保证低于对方7倍的变更失败率。正是这样高效的IT运作能力吸引了大量组织开始投入DevOps的实践运动。
 
 * 您可以点击这里下载完整版的《2018全球DevOps现状调查报告》
-* 或者也可以点击这里观看【DevOps+LIVE】直播频道与DevOpsDays的核心组织者一起对这份报告的解读。
+* 或者也可以点击[DevOps+LIVE直播频道](http://devopslive.bopoda.cn/live/63db3130)观看DevOpsDays的核心组织者对这份报告的解读分享视频。
 
 ## 课程结构
 

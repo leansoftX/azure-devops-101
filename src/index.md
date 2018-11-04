@@ -37,7 +37,7 @@ DORA 公司 （DevOps Research and Assessment，DevOps 研究与评估机构）�
 
 ## 动手实验列表
 
-准备：Azure DevOps实验环境激活
+准备：Azure DevOps实验环境激活
 
 * 使用 devcloudX.com 激活 Azure DevOps 实验环境
 
@@ -51,7 +51,7 @@ DORA 公司 （DevOps Research and Assessment，DevOps 研究与评估机构）�
 * 实验 2: 销售额翻倍挑战
   * 练习 1: 熟悉示例项目，PartsUnlimited 电子商务网站
   * 练习 2: 使用影响地图和用户故事地图完成目标挑战：销售额翻倍
-* 实验 3: 使用Azure DevOps Board电子看板实现影响地图和用户故事地图的电子化管理
+* 实验 3: 使用Azure DevOps Board电子看板实现影响地图和用户故事地图的电子化管理
   * 练习 1: 管理产品积压工作列表(Product Backlogs)
   * 练习 2: 管理迭代计划(Sprint Backlogs)
   * 练习 3: 电子看板定制化配置

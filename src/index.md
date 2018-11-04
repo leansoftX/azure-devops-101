@@ -72,6 +72,10 @@ DORA 公司 （DevOps Research and Assessment，DevOps 研究与评估机构）�
 
 欢迎任何人通过Fork + Pull Reqeust或者Issue的方式提交本文档相关的任何问题，Bug和特定内容的请求，我们即使处理您的请求。
 
+您也可以通过下图所列出的方式与我们取得联系
+
+![](images/azure-devops-socialmedia.png)
+
 ## 版权和帮助
 
 如果您在使用此文档的过程中遇到任何问题，请扫描以下二维码关注我公司公众号，并通过留言的方式与我们取得联系，我们会在第一时间回复您的问题。

@@ -1,8 +1,8 @@
 # Azure DevOps 101 培训及动手实验文档集
 
+[![Build Status](https://dev.azure.com/leansoftx/trainings/_apis/build/status/leansoftX.azure-devops-101)](https://dev.azure.com/leansoftx/trainings/_build/latest?definitionId=6)
+
 本Repo包含leansoftX.com对外提供的基于微软研发云(Azure DevOps)的培训级动手实验文档集合，本文档集免费开源提供给社区使用，您可以任意复制，修改并在任何非商业性用途中使用。
-
-
 
 文档源代码托管于Github https://github.com/leansoftX/azure-devops-101
 

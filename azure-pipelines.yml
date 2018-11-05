@@ -1,16 +1,26 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
-pool:
-  vmImage: 'Ubuntu 16.04'
-
+resources:
+- repo: self
+queue:
+  name: Hosted VS2017
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- task: lean-soft.pull-request-diff-copy.pull-request-diff-copy-cross-platform.Pull Request Diff Copy@0
+  displayName: 'Pull Request Diff Copy '
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+  enabled: false
+
+- task: FtpUpload@1
+  displayName: 'FTP Upload: src'
+  inputs:
+    serverEndpoint: 'ftp-devopshub-docs-mdwiki'
+
+    rootDirectory: src
+
+    remoteDirectory: /site/wwwroot/mdwiki/docs/azuredevops101/
+
+    preservePaths: true
+
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
+  inputs:
+    PathtoPublish: src

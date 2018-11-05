@@ -11,7 +11,7 @@
 您可以直接在GitHub浏览本文档或者通过[【DevOps文档中心】](https://docs.devopshub.cn)查看
 
 * [Github文档入口](src/index.md)
-* [DevOps文档中心入口](https://docs.devopshub.cn/mdwiki/#!docs/azure-devops-101/index.md)
+* [DevOps文档中心入口](https://docs.devopshub.cn/mdwiki/#!docs/azuredevops101/index.md)
 
 所有文档使用markdown格式编写，并使用Azure DevOps Pipeline（流水线）自动发布
 

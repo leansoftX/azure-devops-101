@@ -12,11 +12,8 @@ steps:
   displayName: 'FTP Upload: src'
   inputs:
     serverEndpoint: 'ftp-devopshub-docs-mdwiki'
-
     rootDirectory: src
-
     remoteDirectory: /site/wwwroot/mdwiki/docs/azuredevops101/
-
     preservePaths: true
 
 

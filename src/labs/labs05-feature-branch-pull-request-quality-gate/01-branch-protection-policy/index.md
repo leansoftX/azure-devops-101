@@ -1,4 +1,4 @@
-﻿#01 启用分支保护
+﻿# 01 启用分支保护
 ##### 通过在master分支上启动分支保护，保障master分支代码可用性。
 ## 1.点击“代码”| “分支”| master | “分支策略”
 ![](images/startbranchprotectionstep1.png)

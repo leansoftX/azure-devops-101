@@ -39,7 +39,7 @@ DORA 公司 （DevOps Research and Assessment，DevOps 研究与评估机构）�
 
 **准备：Azure DevOps实验环境激活**
 
-* 使用 devcloudX.com 激活 Azure DevOps 实验环境
+* [使用 devcloudX.com 激活 Azure DevOps 实验环境](labs/labs00-environment-preparation/index.md)
 
 **第一天：使用Azure DevOps支持敏捷开发实践**
 
@@ -59,14 +59,14 @@ DORA 公司 （DevOps Research and Assessment，DevOps 研究与评估机构）�
 
 **第二天：使用Azure DevOps搭建基于Docker的持续交付流水线**
 
-* 实验 1: 基于Docker的持续交付流水线搭建
-  * 练习 1: 从Github导入源代码到Azure DevOps Repo代码托管
-  * 练习 2: 使用 Azure DevOps Pipeline流水线完成持续集成配置（生成定义）
-  * 练习 3: 使用 Azure DevOps Pipeline流水线完成持续部署配置（发布定义）
-* 实验 2: 使用【特性分支+拉取请求+质量门】的方式完成软件质量控制
-  * 练习 1: 启用分支策略
-  * 练习 2: 创建功能分支并使用拉去请求完成质量验证
-  * 练习 3: 完成拉取请求以便合并代码到master分支
+* [实验 1: 基于Docker的持续交付流水线搭建](labs/labs04-azuredevops-build-docker-CICD-pipeline/index.md)
+  * [练习 1: 从Github导入源代码到Azure DevOps Repo代码托管](labs/labs04-azuredevops-build-docker-CICD-pipeline/01-import-git-repo/index.md)
+  * [练习 2: 使用 Azure DevOps Pipeline流水线完成持续集成配置（生成定义）](labs/labs04-azuredevops-build-docker-CICD-pipeline/02-pipeline-ci/index.md)
+  * [练习 3: 使用 Azure DevOps Pipeline流水线完成持续部署配置（发布定义）](labs/labs04-azuredevops-build-docker-CICD-pipeline/03-pipeline-cd/index.md)
+* [实验 2: 使用【特性分支+拉取请求+质量门】的方式完成软件质量控制](labs/labs05-feature-branch-pull-request-quality-gate/index.md)
+  * [练习 1: 启用分支策略](labs/labs05-feature-branch-pull-request-quality-gate/01-branch-protection-policy/index.md)
+  * [练习 2: 创建功能分支并使用拉去请求完成质量验证](labs/labs05-feature-branch-pull-request-quality-gate/02-create-feature-branch-pull-request/index.md)
+  * [练习 3: 完成拉取请求以便合并代码到master分支](labs/labs05-feature-branch-pull-request-quality-gate/03-merge-pull-request/index.md)
 
 ## 欢迎参与文档编写
 

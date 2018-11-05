@@ -1,4 +1,4 @@
-# Azure DevOps 101 微软研发云培训及动手实验文档集
+﻿# Azure DevOps 101 微软研发云培训及动手实验文档集
 
 今天的技术常新日新月异，数字化转型给全球各行业都带来了去打的变革和机遇，今天任何一家公司都必须成为软件公司，通过科技的提升才能赢得未来。面对市场和技术的快速发展，实现快速迭代，敏捷开发和DevOps研发运维一体化，已经成为软件工程领域的主流趋势。在实际推动DevOps实践的过程中，无论是快速成长的新创企业，或是拥有大规模IT团队的大型企业，我们都常听到这种问题：为什么要DevOps？DevOps能解决哪些问题？导入DevOps有哪些挑战，方法和步骤？如何让DevOps实践为企业创造价值？
 
@@ -46,8 +46,8 @@ DORA 公司 （DevOps Research and Assessment，DevOps 研究与评估机构）�
 * [实验 1: 了解敏捷开发基本概念](labs/labs01-agile-overview/index.md)
   * [练习 1: 关于用户故事](labs/labs01-agile-overview/01-user-story/index.md)
   * [练习 2: 关于敏捷开发](labs/labs01-agile-overview/02-agile-software-development/index.md)
-  * 练习 3: 影响地图概述
-  * 练习 4: 用户故事地图概述
+  * [练习 3: 影响地图概述](labs/labs01-agile-overview/03-impact-mapping/index.md)
+  * [练习 4: 用户故事地图概述](labs/labs01-agile-overview/04-user-story-mapping/index.md)
 * 实验 2: 销售额翻倍挑战
   * 练习 1: 熟悉示例项目，PartsUnlimited 电子商务网站
   * 练习 2: 使用影响地图和用户故事地图完成目标挑战：销售额翻倍

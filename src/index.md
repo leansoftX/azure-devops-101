@@ -51,11 +51,11 @@ DORA 公司 （DevOps Research and Assessment，DevOps 研究与评估机构）�
 * 实验 2: 销售额翻倍挑战
   * 练习 1: 熟悉示例项目，PartsUnlimited 电子商务网站
   * 练习 2: 使用影响地图和用户故事地图完成目标挑战：销售额翻倍
-* 实验 3: 使用Azure DevOps Board电子看板实现影响地图和用户故事地图的电子化管理
-  * 练习 1: 管理产品积压工作列表(Product Backlogs)
-  * 练习 2: 管理迭代计划(Sprint Backlogs)
-  * 练习 3: 电子看板定制化配置
-  * 练习 4: 使用电子看板运作一个迭代
+* [实验 3: 使用Azure DevOps Board电子看板实现影响地图和用户故事地图的电子化管理](labs/labs03-product-planning/index.md)
+  * [练习 1: 管理产品积压工作列表(Product Backlogs)](labs/labs03-product-planning/01-create-backlog-by-impact-story-mapping/index.md)
+  * [练习 2: 管理迭代计划(Sprint Backlogs)](labs/labs03-product-planning/02-sprint-planning/index.md)
+  * [练习 3: 电子看板定制化配置](labs/labs03-product-planning/03-kanban-management-customize/index.md)
+  * [练习 4: 使用电子看板运作一个迭代](labs/labs03-product-planning/04-kanban-management-sprint-running/index.md)
 
 **第二天：使用Azure DevOps搭建基于Docker的持续交付流水线**
 

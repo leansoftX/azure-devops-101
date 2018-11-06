@@ -72,7 +72,7 @@
 ![](images/startcdstep1.png)
 ### 2. 点击“排队”
 ![](images/startcdstep2.png)
-### 3. 点击“Release-1” 查看发布日志：
+### 3. 点击“Release-*” 查看发布日志：
 ![](images/startcdstep3click.png)
 ![](images/startcdstep3log.png)
 ![](images/startcdstep3status.png)

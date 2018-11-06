@@ -1,4 +1,4 @@
-01：创建TFS积压工作列表
+﻿01：创建TFS积压工作列表
 =============================
 
 本练习使用Team Foundation Server 2017，团队项目使用标准Scrum模板。
@@ -20,27 +20,28 @@
 
 将影响地图中的What详细分解成用户故事，并分别放置在所属的故事地图中的用户活动下。其中用户活动对应的是TFS中的区域。
 
-任务二：登陆TFS Web门户
+任务二：登陆VSTS并创建PartsUnlimitedDemo项目
 -----------------------
 
-1.  打开浏览器打开TFS门户。
+1. 点击TFS服务器黄色小尖头
+![](images/createprojectopenserverstep6.png)
 
-![](images/agile-planning-login-tfs.png)
+2. 点击tfs，打开tfs站点门户
+![](images/createprojectopenserverstep7.png)
 
-2.  使用分配的TFS帐号登陆。
+3. 输入Azure DevOps Server账号密码（默认账号:azureuser,默认密码: P2ssw0rd@123）
+![](images/createprojectopenserverstep8.png)
 
-![](images/agile-planning-open-tfs-home.png)
+4. 输入项目项目名称 “PartsUnlimitedDemo”，保持默认版本控制”Git”, 点击创建
+![](images/createprojectcreatestep1.png)
 
-3.  从TFS主页中，选择 \*\* PartsUnlimitedDemo/GroupA \*\*
-    打开项目和团队信息。
+5. 点击“仪表盘”
+![](images/createprojectcreatestep2.png)
 
-![](images/agile-planning-choose-project-team.png)
-
-5.  接下来会出现团队的默认主页视图。该视图提供包含各种信息的卡片组合，例如查询结果卡片、新建工作项卡片、冲刺燃尽图卡片、团队成员卡片等等。
-
+6.  接下来会出现团队的默认主页视图。该视图提供包含各种信息的卡片组合，例如查询结果卡片、新建工作项卡片、冲刺燃尽图卡片、团队成员卡片等等。
 ![](images/agile-planning-project-default-portal-team.png)
 
-任务二：将影响地图导入到影响积压工作列表
+任务三：将影响地图导入到影响积压工作列表
 ----------------------------------------
 
 通过TFS的 [Portfolio
@@ -63,7 +64,7 @@ Management](https://www.visualstudio.com/zh-cn/docs/work/scale/portfolio-managem
 
 将所有特性使用这种方法导入到TFS中。
 
-任务三：故事地图中用户活动与TFS区域的映射
+任务四：故事地图中用户活动与TFS区域的映射
 -----------------------------------------
 
 试验环境中已经预先按照样例项目的故事地图的用户活动配置了TFS区域，如下图：
@@ -85,14 +86,14 @@ Management](https://www.visualstudio.com/zh-cn/docs/work/scale/portfolio-managem
 
 ![](images/agile-planning-create-area-tfs17.png)
 
-1.  可以看到在根区域中下一级出现了"前端页面"区域。同理可以在根区域中加入"后台页面"、"系统功能"。同理，当我们选定"前端页面"这个区域时，点击
+2.  可以看到在根区域中下一级出现了"前端页面"区域。同理可以在根区域中加入"后台页面"、"系统功能"。同理，当我们选定"前端页面"这个区域时，点击
     **新建子级**
     按钮，我们就可以在该区域下新建子区域了。我们可以将用户故事地图中的区域信息按照这样的方式完整的录入到
     **区域** 下。
 
 ![](images/agile-planning-area-list-tfs17.png)
 
-任务四：将故事地图导入到TFS积压工作列表
+任务五：将故事地图导入到TFS积压工作列表
 ---------------------------------------
 
 将故事地图中的用户故事导入到TFS的 **产品积压工作项** 中。 打开
@@ -108,7 +109,7 @@ Management](https://www.visualstudio.com/zh-cn/docs/work/scale/portfolio-managem
 
 如果你的工作项不在正确的位置，请使用鼠标拖拽完成优先级排序操作。
 
-任务五：TFS积压工作列表的结构
+任务六：TFS积压工作列表的结构
 -----------------------------
 
 现在 **特性** 积压工作列表页面中已经导入了影响地图中的 **What**

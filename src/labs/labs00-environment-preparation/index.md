@@ -37,7 +37,7 @@
 ### 11. 通过点击以下链接可以分别进入TFS 服务器以及Linux代理服务器
 ![](images/preparestep9.png)
 
-### 12. TFS服务器进入后，如下图所示
+### 12. TFS服务器进入后，选中网络配置“是”，如下图所示
 ![](images/preparestep10.png)
 
 ### 13. Linux服务器进入后，如下图所示：

@@ -1,33 +1,74 @@
 ﻿# 03 使用 Azure DevOps Pipeline流水线完成持续部署配置（发布定义）
 #### 通过此练习您将学习如何通过Azure DevOps Server搭建项目快速交付流水线，完成.net core 项目的自动化部署。
+
 ## 创建发布定义
 ### 1. 点击 “版本和发布“，选择“发布”
 ![](images/createcddefinestep1.png)
+
 ### 2. 点击 “新建定义”
 ![](images/createcddefinestep2.png)
+
 ### 3. 选择“空” 模版 点击应用
 ![](images/createcddefinestep3.png)
-### 4. 点击 “添加项目” ，选择源（生成定义）“TechSummit2018-CI”，点击添加
+
+### 4. 点击 “添加项目” ，选择源（生成定义）“Voting-CI”，点击添加
 ![](images/createcddefinestep4.png)
+
 ### 5. 修改环境名称为 “DEMO环境”
 ![](images/createcddefinestep5.png)
+
 ### 6. 点击环境的步骤任务
 ![](images/createcddefinestep6.png)
+
 ### 7. 设置代理阶段为 “Linux”
 ![](images/createcddefinestep7.png)
-### 8. 添加部署步骤：点击+，搜索“命令行”，点击“添加”
+
+### 8. 进入“服务”添加SSH连接
 ![](images/createcddefinestep8.png)
-### 9. 请按照如下表格设置参数：
-|参数|值|说明|
-|-|-|-|
-|版本|2||
-|显示名称：|使用容器运行应用|构建步骤显示名称|
-|脚本：|docker-compose -f docker-compose-template.yml -f docker-compose.override.yml -p demo up -d|使用docker compose命令执行环境部署|
+![](images/createcddefinestep8-1.png)
+![](images/createcddefinestep8-2.png)
+#### 打开 http://devcloudx.com/Templates/29 进入可用环境
+![](images/createcddefinestep8-3.png)
+#### 双击复制Linux服务器hostname的值，注意不要使用后面的复制键
+![](images/createcddefinestep8-4.png)
+#### 填写创建到ssh连接的主机名处：
+![](images/createcddefinestep8-5.png)
+#### 其余参数如下：
+|参数|值|
+|-|-|
+|连接名称|ssh连接|
+|端口号|22|
+|用户名|azureuser|
+|密码或通行证|P2ssw0rd@123|
+#### 点击确定创建
+
+### 9. 回到新建发布定义，添加任务“通过SSH复制文件”
 ![](images/createcddefinestep9.png)
-### 10.	打开 “高级” | “工作目录”，设置工作目录，如下图所示：
+#### 填写参数：
+|参数|值|
+|-|-|
+|版本|0.*|
+|显示名称|将文件安全复制到远程计算机|
+|SSH 终结点|ssh连接|
+|源文件夹|$(System.DefaultWorkingDirectory)/Voting-CI/drop|
+|内容|docker-compose-template.yml|
+|目标文件夹|/home/azureuser/publish|
+####![](images/createcddefinestep9-1.png)
+
+### 10. 添加任务“SSH”
 ![](images/createcddefinestep10.png)
-### 11.	修改发布定义名称为“TechSummitRelease” ，并点击“保存”
-![](images/createcddefinestep11.png)
+#### 填写参数：
+|参数|值|
+|-|-|
+|版本|0.*|
+|显示名称|在远程计算机上运行 shell commands|
+|SSH 终结点|ssh连接|
+|运行|Commands|
+|命令|docker login azuredevops101.azurecr.cn -u azuredevops101 -p 175iY+sEpx16pq0cF2Z0M/izY2DhUHgi
+docker-compose -f /home/azureuser/publish/docker-compose-template.yml up -d|
+|高级-STDERR故障|否|
+####![](images/createcddefinestep10-1.png)
+#### 保存
 
 ## 触发持续部署
 ### 1. 点击“发布”| “创建发布”
@@ -52,11 +93,9 @@
 ![](images/startcontinuebuildstep2.png)
 ### 3. 点击 “触发器” | 触发器状态设置为 “已启用” | 点击保存
 ![](images/startcontinuebuildstep3.png)
-### 4. 点击保存
-![](images/startcontinuebuildstep4.png)
 
 ## 启动持续发布
-### 1. 点击 发布 | TechSummitRelease | 编辑
+### 1. 点击 发布 | 新建发布定义 | 编辑
 ![](images/startcontinuedeploystep1.png)
 ### 2. 启动 “持续部署触发器”| 保存
 ![](images/startcontinuedeploystep2.png)

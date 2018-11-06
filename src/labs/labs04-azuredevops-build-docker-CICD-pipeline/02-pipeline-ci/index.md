@@ -14,7 +14,7 @@
 ##### 添加任务，搜索“docker“，点击“添加” 
 ![](images/createcidefinestep4.png)
 
-#####“Docker注册表连接”参数需要一个Docker Registry，在服务中添加：
+##### “Docker注册表连接”参数需要一个Docker Registry，在服务中添加：
 ![](images/createcidefinestep4info1.png)
 ![](images/createcidefinestep4info2.png)
 ##### 使用如下表格设置参数：
@@ -24,11 +24,13 @@
 |Docker Registry|azuredevops101.azurecr.cn|
 |Docker ID|azuredevops101|
 |Password|175iY+sEpx16pq0cF2Z0M/izY2DhUHgi|
-![](images/createcidefinestep4info3.png)
+
+##### ![](images/createcidefinestep4info3.png)
 
 ##### 回到之前页面，点击Docker注册表连接后面的刷新，选择“acr”
 ![](images/createcidefinestep4info4.png)
-按照如下参数配置：
+
+##### 按照如下参数配置：
 |参数|值|
 |-|-|
 |版本|0.*|
@@ -48,7 +50,7 @@
 |版本：|2*（预览）|命令行版本|
 |显示名称：|替换docker template镜像版本|构建步骤显示名称|
 |脚本：|sed -i "s/%{Build.BuildId}%/$(Build.BuildId)/g" docker-compose-template.yml|使用sed命令替换docker-compose-template编排文件的部署镜像版本|
-![](images/createcidefinestep5.png)
+##### ![](images/createcidefinestep5.png)
 
 ### 6. 构建步骤三：发布生成项目并回传发布文件到Azure DevOps Server
 ##### 添加任务，搜索“发布”，选择“发布生成项目“ 点击添加，如下图所示：
@@ -60,7 +62,7 @@
 |要发布的路径：|docker-compose-template.yml|发布的文件|
 |项目名称：|drop|设置文件夹名称|
 |项目类型：|Server|回传到Azure DevOps Server|
-![](images/createcidefinestep6info.png)
+##### ![](images/createcidefinestep6info.png)
 
 ## 触发持续集成
 ### 1. 点击 “保存和排队

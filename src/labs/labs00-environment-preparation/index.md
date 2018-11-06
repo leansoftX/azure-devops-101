@@ -56,7 +56,7 @@
 ### 3. 输入Azure DevOps Server账号密码（默认账号:azureuser,默认密码: P2ssw0rd@123）
 ![](images/createprojectopenserverstep8.png)
 
-### 4. 输入项目项目名称 “TechSummit2018”，保持默认版本控制”Git”, 点击创建
+### 4. 输入项目项目名称 “Voting”，保持默认版本控制”Git”, 点击创建
 ##### 注意：由于环境刚刚启动成功，第一次可能会出现项目创建失败的可能，如出现失败，请重新创建, 错误如下所示：
 ![](images/createprojectcreatestep1error.png)
 ![](images/createprojectcreatestep1.png)

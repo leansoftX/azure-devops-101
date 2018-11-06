@@ -31,15 +31,14 @@
 ![](images/createcddefinestep8-3.png)
 #### 双击复制Linux服务器hostname的值，注意不要使用后面的复制键
 ![](images/createcddefinestep8-4.png)
-#### 填写创建到ssh连接的主机名处：
-![](images/createcddefinestep8-5.png)
-#### 其余参数如下：
+#### 填写到ssh连接的主机名处，其余参数如下：
 |参数|值|
 |-|-|
 |连接名称|ssh连接|
 |端口号|22|
 |用户名|azureuser|
 |密码或通行证|P2ssw0rd@123|
+#### ![](images/createcddefinestep8-5.png)
 #### 点击确定创建
 
 ### 9. 回到新建发布定义，添加任务“通过SSH复制文件”
@@ -53,22 +52,20 @@
 |源文件夹|$(System.DefaultWorkingDirectory)/Voting-CI/drop|
 |内容|docker-compose-template.yml|
 |目标文件夹|/home/azureuser/publish|
-####![](images/createcddefinestep9-1.png)
+#### ![](images/createcddefinestep9-1.png)
 
 ### 10. 添加任务“SSH”
 ![](images/createcddefinestep10.png)
-#### 填写参数：
+#### 填写参数并保存：
 |参数|值|
 |-|-|
 |版本|0.*|
 |显示名称|在远程计算机上运行 shell commands|
 |SSH 终结点|ssh连接|
 |运行|Commands|
-|命令|docker login azuredevops101.azurecr.cn -u azuredevops101 -p 175iY+sEpx16pq0cF2Z0M/izY2DhUHgi
-docker-compose -f /home/azureuser/publish/docker-compose-template.yml up -d|
+|命令|docker login azuredevops101.azurecr.cn -u azuredevops101 -p 175iY+sEpx16pq0cF2Z0M/izY2DhUHgi <br> docker-compose -f /home/azureuser/publish/docker-compose-template.yml up -d|
 |高级-STDERR故障|否|
-####![](images/createcddefinestep10-1.png)
-#### 保存
+#### ![](images/createcddefinestep10-1.png)
 
 ## 触发持续部署
 ### 1. 点击“发布”| “创建发布”

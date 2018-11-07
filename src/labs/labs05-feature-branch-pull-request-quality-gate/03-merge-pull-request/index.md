@@ -20,4 +20,8 @@
 
 ![](images/mergepullrequeststep5.png)
 
+## 6. 打开master历史记录查看合并情况
+
+![](images/mergepullrequeststep6.png)
+
 #### 恭喜你已经完成了所有的训练！

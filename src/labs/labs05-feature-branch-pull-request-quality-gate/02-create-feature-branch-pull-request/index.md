@@ -1,4 +1,4 @@
-﻿# 02 创建功能分支并使用拉取请求完成质量验证
+﻿# 02 创建功能分支并使用拉取请求完成质量验证
 ## 创建功能分支
 ### 1. 添加需求 – “Voting 界面修改”
 
@@ -50,4 +50,4 @@
 
 ![](images/createpullrequeststep6.png)
 
-![](images/createpullrequeststep6-1.png)
+![](images/createpullrequeststep6-.png)

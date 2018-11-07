@@ -50,4 +50,4 @@
 
 ![](images/createpullrequeststep6.png)
 
-![](images/createpullrequeststep6-.png)
+![](images/createpullrequeststep6-1.png)

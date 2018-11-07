@@ -12,7 +12,7 @@
 
 ![](images/mergepullrequeststep3.png)
 
-## 4. 确认是否需要“合并后完成链接的工作项”和“合并后删除feature01”，点击“完成合并”
+## 4. 确认是否需要“合并后完成链接的工作项”和“合并后删除feature01”，点击“完成合并”
 
 ![](images/mergepullrequeststep4.png)
 
@@ -20,4 +20,4 @@
 
 ![](images/mergepullrequeststep5.png)
 
-#### 恭喜你已经完成了所有的训练！
+#### 恭喜你已经完成了所有的训练！

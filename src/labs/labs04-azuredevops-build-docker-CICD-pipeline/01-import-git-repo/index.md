@@ -1,5 +1,9 @@
 ﻿# 01 从Github导入源代码到Azure DevOps Repo代码托管
 #### 通过此练习您将学习如何将Git库代码导入到Azure DevOps Server配置管理系统.
+## 0. 准备工作
+#### 请大家参考[创建Azure DevOps 项目](../../labs00-environment-preparation/index.md#创建Azure_DevOps_项目)来创建我们接下来实验中要用到的Azure DevOps “Voting” 项目，如果已经创建完毕请忽略此部分。
+
+
 
 ## 1. 打开DevOps魔盒：http://devcloudx.com, 使用账号密码登录系统
 ![](images/createprojectopenserverstep1.png)
